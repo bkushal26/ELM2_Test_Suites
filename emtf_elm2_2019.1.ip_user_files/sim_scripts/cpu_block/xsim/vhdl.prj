@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../bd/cpu_block/ip/cpu_block_proc_sys_reset_0_0/sim/cpu_block_proc_sys_reset_0_0.vhd" \
+"../../../bd/cpu_block/ip/cpu_block_axi_bram_ctrl_0_0/sim/cpu_block_axi_bram_ctrl_0_0.vhd" \
+"../../../bd/cpu_block/ip/cpu_block_util_ds_buf_0_0/util_ds_buf.vhd" \
+"../../../bd/cpu_block/ip/cpu_block_util_ds_buf_0_0/sim/cpu_block_util_ds_buf_0_0.vhd" \
+"../../../bd/cpu_block/ip/cpu_block_util_ds_buf_0_1/sim/cpu_block_util_ds_buf_0_1.vhd" \
+"../../../bd/cpu_block/ip/cpu_block_axi_bram_ctrl_1_0/sim/cpu_block_axi_bram_ctrl_1_0.vhd" \
+
+nosort

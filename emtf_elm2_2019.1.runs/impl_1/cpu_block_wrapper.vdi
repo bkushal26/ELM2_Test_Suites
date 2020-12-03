@@ -1,0 +1,756 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec  3 18:06:43 2020
+# Process ID: 4130
+# Current directory: /home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.runs/impl_1
+# Command line: vivado -log cpu_block_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cpu_block_wrapper.tcl -notrace
+# Log file: /home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.runs/impl_1/cpu_block_wrapper.vdi
+# Journal file: /home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source cpu_block_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/ehep/Vivado_Projects/ELM_ALEX_project/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1506.266 ; gain = 0.000 ; free physical = 2743 ; free virtual = 12421
+Command: link_design -top cpu_block_wrapper -part xczu4cg-sfvc784-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu4cg-sfvc784-2-e
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_axi_chip2chip_0_0/cpu_block_axi_chip2chip_0_0.xdc] for cell 'cpu_block_i/axi_chip2chip_0/inst'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_axi_chip2chip_0_0/cpu_block_axi_chip2chip_0_0.xdc] for cell 'cpu_block_i/axi_chip2chip_0/inst'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_proc_sys_reset_0_0/cpu_block_proc_sys_reset_0_0_board.xdc] for cell 'cpu_block_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_proc_sys_reset_0_0/cpu_block_proc_sys_reset_0_0_board.xdc] for cell 'cpu_block_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_proc_sys_reset_0_0/cpu_block_proc_sys_reset_0_0.xdc] for cell 'cpu_block_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_proc_sys_reset_0_0/cpu_block_proc_sys_reset_0_0.xdc] for cell 'cpu_block_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_zynq_ultra_ps_e_0_0/cpu_block_zynq_ultra_ps_e_0_0.xdc] for cell 'cpu_block_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_zynq_ultra_ps_e_0_0/cpu_block_zynq_ultra_ps_e_0_0.xdc] for cell 'cpu_block_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_aurora_64b66b_0_1/cpu_block_aurora_64b66b_0_1.xdc] for cell 'cpu_block_i/aurora_64b66b_0/inst'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_aurora_64b66b_0_1/cpu_block_aurora_64b66b_0_1.xdc] for cell 'cpu_block_i/aurora_64b66b_0/inst'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_aurora_64b66b_0_1/ip_0/synth/cpu_block_aurora_64b66b_0_1_gt.xdc] for cell 'cpu_block_i/aurora_64b66b_0/inst/cpu_block_aurora_64b66b_0_1_core_i/cpu_block_aurora_64b66b_0_1_wrapper_i/cpu_block_aurora_64b66b_0_1_multi_gt_i/cpu_block_aurora_64b66b_0_1_gt_i/inst'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_aurora_64b66b_0_1/ip_0/synth/cpu_block_aurora_64b66b_0_1_gt.xdc] for cell 'cpu_block_i/aurora_64b66b_0/inst/cpu_block_aurora_64b66b_0_1_core_i/cpu_block_aurora_64b66b_0_1_wrapper_i/cpu_block_aurora_64b66b_0_1_multi_gt_i/cpu_block_aurora_64b66b_0_1_gt_i/inst'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_aurora_64b66b_0_1/ip_1/cpu_block_aurora_64b66b_0_1_fifo_gen_master.xdc] for cell 'cpu_block_i/aurora_64b66b_0/inst/cpu_block_aurora_64b66b_0_1_core_i/cpu_block_aurora_64b66b_0_1_wrapper_i/cbcc_gtx0_i/master_fifo.data_fifo/U0'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_aurora_64b66b_0_1/ip_1/cpu_block_aurora_64b66b_0_1_fifo_gen_master.xdc] for cell 'cpu_block_i/aurora_64b66b_0/inst/cpu_block_aurora_64b66b_0_1_core_i/cpu_block_aurora_64b66b_0_1_wrapper_i/cbcc_gtx0_i/master_fifo.data_fifo/U0'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_clk_wiz_0_0/cpu_block_clk_wiz_0_0_board.xdc] for cell 'cpu_block_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_clk_wiz_0_0/cpu_block_clk_wiz_0_0_board.xdc] for cell 'cpu_block_i/clk_wiz_0/inst'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_clk_wiz_0_0/cpu_block_clk_wiz_0_0.xdc] for cell 'cpu_block_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_clk_wiz_0_0/cpu_block_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_clk_wiz_0_0/cpu_block_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2847.031 ; gain = 340.844 ; free physical = 1477 ; free virtual = 11290
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.103120 which will be rounded to 0.103 to ensure it is an integer multiple of 1 picosecond [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_clk_wiz_0_0/cpu_block_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_clk_wiz_0_0/cpu_block_clk_wiz_0_0.xdc] for cell 'cpu_block_i/clk_wiz_0/inst'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_util_ds_buf_0_0/cpu_block_util_ds_buf_0_0_board.xdc] for cell 'cpu_block_i/util_ds_buf_0/U0'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_util_ds_buf_0_0/cpu_block_util_ds_buf_0_0_board.xdc] for cell 'cpu_block_i/util_ds_buf_0/U0'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_util_ds_buf_0_1/cpu_block_util_ds_buf_0_1_board.xdc] for cell 'cpu_block_i/util_ds_buf_1/U0'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_util_ds_buf_0_1/cpu_block_util_ds_buf_0_1_board.xdc] for cell 'cpu_block_i/util_ds_buf_1/U0'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/constrs_1/new/emtf_elm1.xdc]
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/constrs_1/new/emtf_elm1.xdc]
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_axi_chip2chip_0_0/cpu_block_axi_chip2chip_0_0_clocks.xdc] for cell 'cpu_block_i/axi_chip2chip_0/inst'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_axi_chip2chip_0_0/cpu_block_axi_chip2chip_0_0_clocks.xdc] for cell 'cpu_block_i/axi_chip2chip_0/inst'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_aurora_64b66b_0_1/cpu_block_aurora_64b66b_0_1_clocks.xdc] for cell 'cpu_block_i/aurora_64b66b_0/inst'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_aurora_64b66b_0_1/cpu_block_aurora_64b66b_0_1_clocks.xdc] for cell 'cpu_block_i/aurora_64b66b_0/inst'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_aurora_64b66b_0_1/ip_1/cpu_block_aurora_64b66b_0_1_fifo_gen_master_clocks.xdc] for cell 'cpu_block_i/aurora_64b66b_0/inst/cpu_block_aurora_64b66b_0_1_core_i/cpu_block_aurora_64b66b_0_1_wrapper_i/cbcc_gtx0_i/master_fifo.data_fifo/U0'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_aurora_64b66b_0_1/ip_1/cpu_block_aurora_64b66b_0_1_fifo_gen_master_clocks.xdc] for cell 'cpu_block_i/aurora_64b66b_0/inst/cpu_block_aurora_64b66b_0_1_core_i/cpu_block_aurora_64b66b_0_1_wrapper_i/cbcc_gtx0_i/master_fifo.data_fifo/U0'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_auto_us_0/cpu_block_auto_us_0_clocks.xdc] for cell 'cpu_block_i/axi_interconnect_0/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_auto_us_0/cpu_block_auto_us_0_clocks.xdc] for cell 'cpu_block_i/axi_interconnect_0/s00_couplers/auto_us/inst'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_auto_ds_0/cpu_block_auto_ds_0_clocks.xdc] for cell 'cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_auto_ds_0/cpu_block_auto_ds_0_clocks.xdc] for cell 'cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst'
+Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_auto_ds_1/cpu_block_auto_ds_1_clocks.xdc] for cell 'cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.srcs/sources_1/bd/cpu_block/ip/cpu_block_auto_ds_1/cpu_block_auto_ds_1_clocks.xdc] for cell 'cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2983.094 ; gain = 0.000 ; free physical = 1485 ; free virtual = 11300
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 10 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 4 instances
+
+11 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 2983.094 ; gain = 1328.781 ; free physical = 1485 ; free virtual = 11300
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu4cg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu4cg'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2983.094 ; gain = 0.000 ; free physical = 1474 ; free virtual = 11291
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1ca2f8c5f
+
+Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:00.34 . Memory (MB): peak = 2983.094 ; gain = 0.000 ; free physical = 1467 ; free virtual = 11283
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 29 inverter(s) to 1420 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 105a3637b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.89 . Memory (MB): peak = 2983.094 ; gain = 0.000 ; free physical = 1367 ; free virtual = 11184
+INFO: [Opt 31-389] Phase Retarget created 79 cells and removed 2783 cells
+INFO: [Opt 31-1021] In phase Retarget, 30 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 136fa803e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2983.094 ; gain = 0.000 ; free physical = 1366 ; free virtual = 11184
+INFO: [Opt 31-389] Phase Constant propagation created 63 cells and removed 354 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 15 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: b58a43b7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2983.094 ; gain = 0.000 ; free physical = 1366 ; free virtual = 11184
+INFO: [Opt 31-389] Phase Sweep created 2 cells and removed 1874 cells
+INFO: [Opt 31-1021] In phase Sweep, 189 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: b58a43b7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2983.094 ; gain = 0.000 ; free physical = 1365 ; free virtual = 11184
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: b58a43b7
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2983.094 ; gain = 0.000 ; free physical = 1365 ; free virtual = 11183
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: b58a43b7
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2983.094 ; gain = 0.000 ; free physical = 1365 ; free virtual = 11183
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 34 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              79  |            2783  |                                             30  |
+|  Constant propagation         |              63  |             354  |                                             15  |
+|  Sweep                        |               2  |            1874  |                                            189  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             34  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2983.094 ; gain = 0.000 ; free physical = 1365 ; free virtual = 11183
+Ending Logic Optimization Task | Checksum: 19b468323
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2983.094 ; gain = 0.000 ; free physical = 1365 ; free virtual = 11184
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=6.914 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 6 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 3 newly gated: 0 Total Ports: 12
+Ending PowerOpt Patch Enables Task | Checksum: 1bfbf421b
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 4663.250 ; gain = 0.000 ; free physical = 567 ; free virtual = 10202
+Ending Power Optimization Task | Checksum: 1bfbf421b
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:01:08 . Memory (MB): peak = 4663.250 ; gain = 1680.156 ; free physical = 589 ; free virtual = 10224
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1bfbf421b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4663.250 ; gain = 0.000 ; free physical = 589 ; free virtual = 10224
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4663.250 ; gain = 0.000 ; free physical = 589 ; free virtual = 10224
+Ending Netlist Obfuscation Task | Checksum: 1e949e3af
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4663.250 ; gain = 0.000 ; free physical = 589 ; free virtual = 10224
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:40 ; elapsed = 00:01:16 . Memory (MB): peak = 4663.250 ; gain = 1680.156 ; free physical = 589 ; free virtual = 10224
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4663.250 ; gain = 0.000 ; free physical = 589 ; free virtual = 10224
+Writing placer database...
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4663.250 ; gain = 0.000 ; free physical = 581 ; free virtual = 10222
+INFO: [Common 17-1381] The checkpoint '/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.runs/impl_1/cpu_block_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file cpu_block_wrapper_drc_opted.rpt -pb cpu_block_wrapper_drc_opted.pb -rpx cpu_block_wrapper_drc_opted.rpx
+Command: report_drc -file cpu_block_wrapper_drc_opted.rpt -pb cpu_block_wrapper_drc_opted.pb -rpx cpu_block_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.runs/impl_1/cpu_block_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu4cg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu4cg'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 559 ; free virtual = 10210
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 14f72f69a
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.11 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 559 ; free virtual = 10210
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 559 ; free virtual = 10210
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 164d4be26
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 543 ; free virtual = 10202
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 21d841f0c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 526 ; free virtual = 10191
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 21d841f0c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 526 ; free virtual = 10191
+Phase 1 Placer Initialization | Checksum: 21d841f0c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 526 ; free virtual = 10191
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 27d1e6a80
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 479 ; free virtual = 10149
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 470 ; free virtual = 10143
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1e4fb475c
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:10 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 471 ; free virtual = 10144
+Phase 2.2 Global Placement Core | Checksum: 25fea1454
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:10 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 468 ; free virtual = 10142
+Phase 2 Global Placement | Checksum: 25fea1454
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:10 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 471 ; free virtual = 10144
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1f36eac5f
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 473 ; free virtual = 10146
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1e64a9da4
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 472 ; free virtual = 10146
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 25819f67a
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:11 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 472 ; free virtual = 10146
+
+Phase 3.4 Small Shape Clustering
+Phase 3.4 Small Shape Clustering | Checksum: 1d2a593b3
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:11 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 470 ; free virtual = 10144
+
+Phase 3.5 Flow Legalize Slice Clusters
+Phase 3.5 Flow Legalize Slice Clusters | Checksum: 1e2698767
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 469 ; free virtual = 10143
+
+Phase 3.6 Slice Area Swap
+Phase 3.6 Slice Area Swap | Checksum: 1bf22ce32
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 460 ; free virtual = 10135
+
+Phase 3.7 Commit Slice Clusters
+Phase 3.7 Commit Slice Clusters | Checksum: 1bd6425a9
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:12 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 463 ; free virtual = 10138
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 19bd93f87
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:12 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 463 ; free virtual = 10137
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 189e3107c
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:12 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 464 ; free virtual = 10138
+Phase 3 Detail Placement | Checksum: 189e3107c
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:12 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 464 ; free virtual = 10138
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 153502341
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 153502341
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:14 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 462 ; free virtual = 10137
+INFO: [Place 30-746] Post Placement Timing Summary WNS=6.500. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 187e1d296
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:14 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 462 ; free virtual = 10137
+Phase 4.1 Post Commit Optimization | Checksum: 187e1d296
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:14 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 462 ; free virtual = 10137
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 187e1d296
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:14 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 466 ; free virtual = 10141
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 463 ; free virtual = 10138
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 19d26e3c5
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:16 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 463 ; free virtual = 10138
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 463 ; free virtual = 10138
+Phase 4.4 Final Placement Cleanup | Checksum: 13b582806
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:16 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 463 ; free virtual = 10138
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 13b582806
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:16 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 464 ; free virtual = 10139
+Ending Placer Task | Checksum: 7d389541
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:16 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 464 ; free virtual = 10139
+INFO: [Common 17-83] Releasing license: Implementation
+65 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:21 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 499 ; free virtual = 10174
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 499 ; free virtual = 10174
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.31 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 473 ; free virtual = 10166
+INFO: [Common 17-1381] The checkpoint '/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.runs/impl_1/cpu_block_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file cpu_block_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.09 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 478 ; free virtual = 10159
+INFO: [runtcl-4] Executing : report_utilization -file cpu_block_wrapper_utilization_placed.rpt -pb cpu_block_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file cpu_block_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 494 ; free virtual = 10176
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu4cg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu4cg'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 14fb1ad5 ConstDB: 0 ShapeSum: 52f8693d RouteDB: 1545112f
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: b9ca1bfd
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 303 ; free virtual = 9994
+Post Restoration Checksum: NetGraph: b2342546 NumContArr: 1deb611f Constraints: af69c8ee Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 17f894f53
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 270 ; free virtual = 9963
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 17f894f53
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 217 ; free virtual = 9912
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 17f894f53
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 217 ; free virtual = 9912
+
+Phase 2.4 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.4 Global Clock Net Routing | Checksum: 14ae547ed
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 228 ; free virtual = 9899
+
+Phase 2.5 Update Timing
+Phase 2.5 Update Timing | Checksum: 3a5f12bd2
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 234 ; free virtual = 9906
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.683  | TNS=0.000  | WHS=-0.164 | THS=-7.303 |
+
+
+Phase 2.6 Update Timing for Bus Skew
+
+Phase 2.6.1 Update Timing
+Phase 2.6.1 Update Timing | Checksum: 364e46e2a
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 233 ; free virtual = 9905
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.683  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.6 Update Timing for Bus Skew | Checksum: 364e46e2a
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 233 ; free virtual = 9905
+Phase 2 Router Initialization | Checksum: 3aaa91a93
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 233 ; free virtual = 9905
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00112039 %
+  Global Horizontal Routing Utilization  = 0.000471983 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 9383
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 7641
+  Number of Partially Routed Nets     = 1742
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 2e249917f
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:27 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 219 ; free virtual = 9891
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1599
+ Number of Nodes with overlaps = 110
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.296  | TNS=0.000  | WHS=-0.012 | THS=-0.012 |
+
+Phase 4.1 Global Iteration 0 | Checksum: e3886452
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:29 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 217 ; free virtual = 9889
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.296  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2413aa8a5
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:30 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 220 ; free virtual = 9892
+Phase 4 Rip-up And Reroute | Checksum: 2413aa8a5
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:30 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 220 ; free virtual = 9892
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 33037722d
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:30 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 222 ; free virtual = 9894
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.296  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 2857fddfe
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:30 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 222 ; free virtual = 9894
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2857fddfe
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:30 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 222 ; free virtual = 9894
+Phase 5 Delay and Skew Optimization | Checksum: 2857fddfe
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:30 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 222 ; free virtual = 9894
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 35ed1662f
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:31 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 221 ; free virtual = 9893
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.296  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 28f440d31
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:31 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 221 ; free virtual = 9893
+Phase 6 Post Hold Fix | Checksum: 28f440d31
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:31 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 221 ; free virtual = 9893
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.924667 %
+  Global Horizontal Routing Utilization  = 1.12568 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 33ea82790
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:31 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 219 ; free virtual = 9891
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 33ea82790
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:31 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 219 ; free virtual = 9891
+
+Phase 9 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin cpu_block_i/aurora_64b66b_0/inst/cpu_block_aurora_64b66b_0_1_core_i/cpu_block_aurora_64b66b_0_1_wrapper_i/cpu_block_aurora_64b66b_0_1_multi_gt_i/cpu_block_aurora_64b66b_0_1_gt_i/inst/gen_gtwizard_gthe4_top.cpu_block_aurora_64b66b_0_1_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[1].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/gthe4_channel_gen.gen_gthe4_channel_inst[0].GTHE4_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTHE4_CHANNEL_X0Y4/MGTREFCLK1
+Phase 9 Depositing Routes | Checksum: 33ea82790
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:31 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 222 ; free virtual = 9894
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=6.296  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 33ea82790
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:31 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 223 ; free virtual = 9896
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:32 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 283 ; free virtual = 9956
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+86 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:37 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 284 ; free virtual = 9956
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 284 ; free virtual = 9956
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.35 . Memory (MB): peak = 4735.285 ; gain = 0.000 ; free physical = 247 ; free virtual = 9943
+INFO: [Common 17-1381] The checkpoint '/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.runs/impl_1/cpu_block_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file cpu_block_wrapper_drc_routed.rpt -pb cpu_block_wrapper_drc_routed.pb -rpx cpu_block_wrapper_drc_routed.rpx
+Command: report_drc -file cpu_block_wrapper_drc_routed.rpt -pb cpu_block_wrapper_drc_routed.pb -rpx cpu_block_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.runs/impl_1/cpu_block_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file cpu_block_wrapper_methodology_drc_routed.rpt -pb cpu_block_wrapper_methodology_drc_routed.pb -rpx cpu_block_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file cpu_block_wrapper_methodology_drc_routed.rpt -pb cpu_block_wrapper_methodology_drc_routed.pb -rpx cpu_block_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.runs/impl_1/cpu_block_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4744.293 ; gain = 0.000 ; free physical = 261 ; free virtual = 9942
+INFO: [runtcl-4] Executing : report_power -file cpu_block_wrapper_power_routed.rpt -pb cpu_block_wrapper_power_summary_routed.pb -rpx cpu_block_wrapper_power_routed.rpx
+Command: report_power -file cpu_block_wrapper_power_routed.rpt -pb cpu_block_wrapper_power_summary_routed.pb -rpx cpu_block_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+98 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 4744.293 ; gain = 0.000 ; free physical = 210 ; free virtual = 9900
+INFO: [runtcl-4] Executing : report_route_status -file cpu_block_wrapper_route_status.rpt -pb cpu_block_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file cpu_block_wrapper_timing_summary_routed.rpt -pb cpu_block_wrapper_timing_summary_routed.pb -rpx cpu_block_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file cpu_block_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file cpu_block_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file cpu_block_wrapper_bus_skew_routed.rpt -pb cpu_block_wrapper_bus_skew_routed.pb -rpx cpu_block_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Memdata 28-208] The XPM instance: <cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <cpu_block_i/axi_chip2chip_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <cpu_block_i/axi_chip2chip_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <cpu_block_i/axi_chip2chip_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <cpu_block_i/axi_chip2chip_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force cpu_block_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu4cg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu4cg'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RTSTAT-10] No routable loads: 31 net(s) have no routable loads. The problem bus(es) and/or net(s) are cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, cpu_block_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/aurora_phy.standard_cc_module_inst/pma_init_assertion_r, cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, cpu_block_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, cpu_block_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i... and (the first 15 of 31 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./cpu_block_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/ehep/Vivado_Projects/ELM_ALEX_project/emtf_elm2_2019.1/emtf_elm2_2019.1.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Dec  3 18:11:14 2020. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+123 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 4744.293 ; gain = 0.000 ; free physical = 304 ; free virtual = 9863
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  3 18:11:14 2020...
